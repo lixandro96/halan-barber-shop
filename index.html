@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>The Halan BarberShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Personas en turno</h1>
+        <div class="datos">
+            <p id="total">Total clientes: 0</p>
+            <!-- <p id="completadas">Completadas: 2</p> -->
+        </div>
+    </header>
+    <main class="contenedor">
+        <form action="" id="formulario" class="formulario">
+            <h4>Reservar turno</h4>
+            <hr>
+            <h5>Nombre</h5>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <h5>Dia</h5>
+            <select name="dia" id="dia">
+                <option value="">Seleccionar</option>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sabado">Sabado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <h5>Hora</h5>
+            <input type="time" id="horario">
+            <input type="submit" value="Reservar" class="reservar">
+        </form>
+        <div class="tareas">
+            <h2 class="datos-vacios">"SIN CLIENTES"</h2>
+            
+        </div>
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
